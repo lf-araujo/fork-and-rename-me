@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Swift_logo.svg/870px-Swift_logo.svg.png" alt="Project">
+  <img src="https://www.wired.com/wp-content/uploads/2014/07/Apple_Swift_Logo.png" alt="The Swift Programming Language">
   <br />
   The Swift Programming Language Snap Package
 </h1>
