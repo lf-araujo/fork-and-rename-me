@@ -1,15 +1,79 @@
-name: my-snap-name # you probably want to 'snapcraft register <name>'
-version: '0.1' # just for humans, typically '1.2+git' or '1.3.2'
-summary: Single-line elevator pitch for your amazing snap # 79 char long summary
+name: swift-language
+version: '4.0.3'
+summary: The Swift Programming Language
 description: |
-  This is my-snap's description. You have a paragraph or two to tell the
-  most important story about your snap. Keep it under 100 words though,
-  we live in tweetspace and your description wants to look good in the snap
-  store.
+  Swift is a high-performance system programming language. It has a clean and
+  modern syntax, offers seamless access to existing C and Objective-C code and
+  frameworks, and is memory safe by default.
 
-confinement: devmode # use 'strict' once you have the right plugs and slots
+# TODO:
+#  - Build from source http://paste.ubuntu.com/25564789/
+
+confinement: strict
+grade: stable
 
 parts:
-  my-part:
-    # See 'snapcraft plugins'
-    plugin: nil
+  swift:
+    plugin: dump
+    source: https://swift.org/builds/swift-4.0.3-release/ubuntu1610/swift-4.0.3-RELEASE/swift-4.0.3-RELEASE-ubuntu16.10.tar.gz
+    stage-packages:
+      - clang
+      - libblocksruntime0
+      - libbsd0
+      - libedit2
+      - libicu-dev          # Yes, the -dev package is deliberately staged.
+      - libncursesw5
+      - libpython2.7
+      - libsqlite3-0
+      - libuutil1linux
+      - libxml2
+      - python2.7
+
+apps:
+  lldb:
+    command: bin/lldb
+    aliases: [ lldb ]
+  lldb-4-0-0:
+    command: bin/lldb-4.0.0
+    aliases: [ lldb-4.0.0 ]
+  lldb-argdumper:
+    command: bin/lldb-argdumper
+    aliases: [ lldb-argdumper ]
+  lldb-mi:
+    command: bin/lldb-mi
+    aliases: [ lldb-mi ]
+  lldb-mi-4-0-0:
+    command: bin/lldb-mi-4.0.0
+    aliases: [ lldb-mi-4.0.0 ]
+  lldb-server:
+    command: bin/lldb-server
+    aliases: [ lldb-server ]
+  lldb-server-4-0-0:
+    command: bin/lldb-server-4.0.0
+    aliases: [ lldb-server-4.0.0 ]
+  repl-swift:
+    command: bin/repl_swift
+    aliases: [ repl_swift ]
+  swift:
+    command: bin/swift
+  swift-autolink-extract:
+    command: bin/swift-autolink-extract
+    aliases: [ swift-autolink-extract ]
+  swift-build:
+    command: bin/swift-build
+    aliases: [ swift-build ]
+  swift-build-tool:
+    command: bin/swift-build-tool
+    aliases: [ swift-build-tool ]
+  swift-demangle:
+    command: bin/swift-demangle
+    aliases: [ swift-demangle ]
+  swift-package:
+    command: bin/swift-package
+    aliases: [ swift-package ]
+  swift-test:
+    command: bin/swift-test
+    aliases: [ swift-test ]
+  swiftc:
+    command: bin/swiftc
+    aliases: [ swiftc ]
