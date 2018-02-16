@@ -15,6 +15,10 @@
 ## Install
 
     sudo snap install swift-language
+    
+I am still trying to acquire the swift namespace, in order to use swift as executable (instead of swift-language.swift) it is required to also run:
+
+    snap alias swift-language.swift swift
 
 ([Don't have snapd installed?](https://snapcraft.io/docs/core/install))
 
