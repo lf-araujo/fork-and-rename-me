@@ -14,7 +14,7 @@
 
 ## Install
 
-    sudo snap install swift-language
+    snap install swift-language --beta --devmode
     
 I am still trying to acquire the swift namespace, in order to use swift as executable (instead of swift-language.swift) it is required to also run:
 
