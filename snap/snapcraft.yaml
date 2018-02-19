@@ -9,8 +9,8 @@ description: |
 # TODO:
 #  - Build from source http://paste.ubuntu.com/25564789/
 
-confinement: strict
-grade: stable
+confinement: devmode
+grade: devel
 architectures: [ amd64 ]
 
 parts:
