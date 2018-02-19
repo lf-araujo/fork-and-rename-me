@@ -11,7 +11,7 @@ description: |
 
 confinement: strict
 grade: stable
-architecture: amd64
+architectures: [ amd64 ]
 
 parts:
   swift:
