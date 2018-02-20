@@ -20,7 +20,7 @@ parts:
     install: |
       if [ "$(arch)" = "x86_64" ]; then
         EXECSTACK_PATH="usr/lib/x86_64-linux-gnu"
-      elif [ "$(arch)" = "[ "armv7l" ]; then
+      elif [ "$(arch)" = [ "armv7l" ]; then
         EXECSTACK_PATH="usr/lib/arm-linux-gnueabihf"
       else
         echo "unkonwn architecture"
