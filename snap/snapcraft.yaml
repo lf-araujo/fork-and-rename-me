@@ -33,46 +33,27 @@ parts:
 apps:
   lldb:
     command: bin/lldb
-    aliases: [ lldb ]
-  lldb-4-0-0:
-    command: bin/lldb-4.0.0
-    aliases: [ lldb-4.0.0 ]
   lldb-argdumper:
     command: bin/lldb-argdumper
-    aliases: [ lldb-argdumper ]
   lldb-mi:
     command: bin/lldb-mi
-    aliases: [ lldb-mi ]
-
   lldb-server:
     command: bin/lldb-server
-    aliases: [ lldb-server ]
-  lldb-server-4-0-0:
-    command: bin/lldb-server-4.0.0
-    aliases: [ lldb-server-4.0.0 ]
   repl-swift:
     command: bin/repl_swift
-    aliases: [ repl_swift ]
   swift:
     command: bin/swift
   swift-autolink-extract:
     command: bin/swift-autolink-extract
-    aliases: [ swift-autolink-extract ]
   swift-build:
     command: bin/swift-build
-    aliases: [ swift-build ]
   swift-build-tool:
     command: bin/swift-build-tool
-    aliases: [ swift-build-tool ]
   swift-demangle:
     command: bin/swift-demangle
-    aliases: [ swift-demangle ]
   swift-package:
     command: bin/swift-package
-    aliases: [ swift-package ]
   swift-test:
     command: bin/swift-test
-    aliases: [ swift-test ]
   swiftc:
     command: bin/swiftc
-    aliases: [ swiftc ]
