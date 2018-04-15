@@ -1,3 +1,5 @@
+[![Snap Status](https://build.snapcraft.io/badge/lf-araujo/swift-snap.svg)](https://build.snapcraft.io/user/lf-araujo/swift-snap)
+
 <h1 align="center">
   <img src="https://www.wired.com/wp-content/uploads/2014/07/Apple_Swift_Logo.png" alt="The Swift Programming Language">
   <br />
