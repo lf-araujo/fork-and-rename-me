@@ -30,6 +30,7 @@ parts:
       - libxml2
       - python2.7
       - libcurl3
+      - libatomic1
       
 apps:
   lldb:
