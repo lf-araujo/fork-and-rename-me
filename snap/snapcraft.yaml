@@ -50,8 +50,6 @@ apps:
     command: bin/swift-autolink-extract
   swift-build:
     command: bin/swift-build
-  swift-build-tool:
-    command: bin/swift-build-tool
   swift-demangle:
     command: bin/swift-demangle
   swift-package:
