@@ -57,3 +57,7 @@ apps:
     command: bin/swift-test
   swiftc:
     command: bin/swiftc
+  swift-run:
+    command: bin/swift-run
+  swift-format:
+    command: bin/swift-format
