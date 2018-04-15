@@ -29,7 +29,7 @@ parts:
       - libuutil1linux
       - libxml2
       - python2.7
-      - libcurl4
+      - libcurl3
       
 apps:
   lldb:
