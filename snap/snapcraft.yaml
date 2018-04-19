@@ -29,10 +29,8 @@ parts:
       - python2.7
       - libcurl3
       - libatomic1
-    stage:
-      - usr/lib/*
-    prime:
-      - usr/lib/*
+    environment:
+      PATH: $SNAP/usr/lib
       
 apps:
   lldb:
